@@ -1,0 +1,477 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+body, html, section {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'helvetica neue', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+p {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+}
+
+header.shrink {
+    background-color: black;
+}
+
+
+/* ----------------------------------------- */
+
+
+.container {
+    width: 100%;
+    max-width: 1310px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 50px;
+    clear: both;
+}
+
+.container_center {
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col-2 {
+    width: 47%;
+}
+
+.col-4 {
+    width: 20%;
+}
+
+/* ------------ header meta -------------- */
+
+#header-meta {
+    background: transparent;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+#header-meta .container {
+    min-height: 30px;
+}
+
+.social-icon {
+    color: #fff;
+}
+
+ul.social-icons {
+    height: 30px;
+    float: right;
+}
+
+.social-icons li {
+    vertical-align: top;
+    display: block;
+    height: 100%;
+    float: left;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.social-icons li:last-child {
+    border-right-style: none;
+    border-right-width: 0;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icon .fa {
+    float: left;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+
+.phone-info {
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 11px;
+    padding: 5px 0;
+}
+
+/* ------------ header nav -------------- */
+
+.header-main_logo {
+    margin: 10px 0;
+}
+
+.header-main_logo img {
+    max-width: 100%;
+    max-height: 60px;
+}
+
+.header-main_menu {
+    float: right;
+}
+
+.menu-nav_item {
+    display: inline-block;
+    position: relative;
+}
+
+.menu-nav_item a {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    padding: 0 13px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.menu-nav_item a:hover {
+    opacity: 1;
+    font-size: 15px;
+    color: #bf0f0f;
+}
+
+.menu-nav_item a:hover + .menu-nav_item__line,
+.menu-nav_item a:active + .menu-nav_item__line,
+.menu-nav_item a:focus + .menu-nav_item__line {
+    opacity: 1;
+}
+
+.menu-nav_item__line {
+    background-color: #bf0f0f;
+    position: absolute;
+    height: 2px;
+    opacity: 0;
+    bottom: 10%;
+    width: 70%;
+    left: 15%;
+}
+
+
+/* ------------------ section home ----------------- */
+
+.slideshow {
+    position: relative;
+    text-align: center;
+}
+
+.slideshow_caption {
+    position: absolute;
+    z-index: 10;
+
+    top: calc(40%);
+    left: calc(50%);
+    transform: translate(-50%);
+}
+
+.slideshow_caption .caption-title,
+.slideshow_caption .caption-content {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 0 1px 0;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+.slideshow_caption .caption-title {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1.1em;
+}
+
+.slideshow_caption .caption-content {
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1.3em;
+}
+
+.slideshow_img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+/* ------------------ section à propos ----------------- */
+
+section h3 {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 50px 0 70px 0;
+    color: #a60321;
+}
+
+
+#section_apropos .content article {
+    /*float: left;*/
+    text-align: left;
+    line-height: 34px;
+}
+
+#section_apropos .content {
+    background-color: black;
+    padding: 50px 0;
+}
+
+#section_apropos article h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 28px;
+    line-height: 1.1em;
+    padding-bottom: 15px;
+    border-bottom: 1px solid white;
+    width: fit-content;
+}
+
+#section_apropos article .article_content {
+    margin-top: 15px;
+}
+
+#section_apropos img {
+    border-radius: 3px;
+}
+
+/* ------------------ section formation ----------------- */
+
+#section_formation .content {
+    background-color: black;
+    height: 500px;
+}
+
+/* ------------------ portfolio ----------------- */
+
+
+.portfolioFilter {
+    padding: 15px 0;
+}
+
+.portfolioFilter a {
+    margin-right: 6px;
+    color: #666;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    padding: 4px 15px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.portfolioFilter a.current {
+    background: #1e1e1e;
+    border: 1px solid #1e1e1e;
+    color: #f9f9f9;
+}
+
+.portfolioContainer {
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
+
+.isotope-item {
+    z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item {
+    /* change duration value to whatever you like */
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+
+/* ------------------ card ------------------ */
+
+
+.card {
+    width: calc(25% - 3px);
+    background-color: white;
+    border: 1px solid #ebebeb;
+}
+
+
+.card:hover .card-image img {
+    width: 105%;
+    opacity: 1;
+}
+
+.card-image {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+
+    transition-property: width;
+    transition-duration: .8s;
+}
+
+.card-body {
+    padding: 20px 20px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.card-title h3 {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+    margin: 0;
+}
+
+.card-date {
+    margin-top: 10px;
+    color: #969696;
+    font-size: 12px;
+}
+
+.card-date {
+    color: #777;
+}
+
+/* ------------------ section compétences ----------------- */
+
+
+.iconbox {
+    text-align: left;
+}
+
+.iconbox .iconbox_content .iconbox_content_title {
+    color: #000000;
+    border: medium none;
+    padding: 2px 0 0 0;
+    position: relative;
+    margin: 0 0 16px 0;
+    clear: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.25em;
+}
+
+
+.iconbox_content_container {
+    line-height: 1.65em;
+    color: #000000;
+}
+
+
+.iconbox_content_container p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+/* ------------------ section contact ----------------- */
+
+#section_contact .content {
+    background-color: black;
+    height: 500px;
+}
+
+/* ----------------------------------- */
+
+
+/* tablette */
+@media (min-width: 426px) {
+    .img-moi {
+        width: 425px;
+        height: 500px;
+    }
+
+    .social-media {
+        float: left;
+    }
+}
+
+/* laptop */
+@media (min-width: 769px ) {
+    .grid-container {
+        grid-template-columns: 300px 300px;
+    }
+}
+
+/* laptop L*/
+@media (min-width: 1025px ) {
+    .grid-container {
+        grid-template-columns: 300px 300px 300px;
+    }
+
+    .content-title-1 {
+        font-size: 35px;
+    }
+
+    .content-title-2 {
+        font-size: 45px;
+    }
+}
