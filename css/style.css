@@ -35,7 +35,7 @@ header {
     z-index: 20;
 }
 
-header.shrink {
+header.shrink, header.black_header {
     background-color: black;
 }
 
